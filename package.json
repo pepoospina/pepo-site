@@ -1,0 +1,59 @@
+{
+  "name": "linked-thoughts",
+  "version": "0.0.8",
+  "author": "pepo@collectiveone.org",
+  "license": "BOOS-FL",
+  "scripts": {
+    "update-uprtcl": "ncu -u \"/^@uprtcl.*$/\"",
+    "build": "rimraf dist-pages && webpack",
+    "build-dev": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development",
+    "dev": "npm start",
+    "deploy": "npm run build && ./deploy.sh http-prd"
+  },
+  "dependencies": {
+    "@kor-ui/kor": "^1.9.1",
+    "@vaadin/router": "^1.7.2",
+    "cids": "^1.0.0",
+    "lit-element": "^2.2.3",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "nanoid": "^3.1.20",
+    "navigo": "^7.1.2",
+    "pwa-helpers": "^0.9.1",
+    "redux": "^4.0.5",
+    "reselect": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "wicg-inert": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-typescript": "^7.9.0",
+    "@open-wc/building-webpack": "^2.13.16",
+    "@types/lodash": "^4.14.168",
+    "@types/moment": "^2.13.0",
+    "@types/navigo": "^7.0.1",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "base-href-webpack-plugin": "^2.0.0",
+    "concurrently": "^5.2.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "es-dev-server": "^1.5.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lit-svg-loader": "0.0.3",
+    "npm-check-updates": "^10.2.1",
+    "rimraf": "^2.6.3",
+    "temp-dir": "^2.0.0",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "engines": {
+    "node": ">=12 <13"
+  }
+}
