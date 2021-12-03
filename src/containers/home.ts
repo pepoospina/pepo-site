@@ -49,17 +49,17 @@ export class Home extends LitElement {
         <kor-card grid-cols="12" flat><h1>Projects</h1></kor-card>
 
         <kor-card
-          label="(2018-now) The Underscore Protocol (_Prtcl)"
+          label="The Underscore Protocol (_Prtcl)"
           grid-cols="6"
           grid-cols-m="12"
           image="./src/assets/uprtcl-logo.png"
         >
           <p>
             _Prtcl started as a tool for collective content management inspired
-            in GIT and evolved into a generic protocol for building
-            interoperable content-management applications, where every object
-            could be stored and forked on multiple platforms (including web3)
-            and by different users.
+            in GIT. It then evolved into a generic protocol for building
+            interoperable content-management applications were every digital
+            object could be stored or forked on multiple platforms (including
+            web3) and by different users.
           </p>
 
           <p>Technologies used:</p>
@@ -80,8 +80,9 @@ export class Home extends LitElement {
           </div>
 
           <p>
-            This work done around _Prtcl involved the development of a few
-            different tools, some of which are listed below.
+            The work done around _Prtcl was extensive, and it involved the
+            development of a few different tools, some of which are listed
+            below:
           </p>
 
           <kor-accordion label="intercreativity">
@@ -106,12 +107,15 @@ export class Home extends LitElement {
               different platforms.
             </p>
             <p>
-              We built two versions of this application: One running purely on
-              web2 technologies, and another where content was governed on
-              Ethreum and stored on IPFS.
+              The same application could be configured to work in three modes: 
+              <ul>
+                  <li>Local, with content stored on the local device</li>
+                  <li>Web2, with content stored on a web-server</li>
+                  <li>Web3, with content stored on Ethreum and IPFS.</li>
+              </ul>
             </p>
 
-            The video below will give you an idea of what Intercreativity is.
+            <p>The video below will give you an idea of what Intercreativity is.</p>
 
             <p>
               <video
@@ -213,7 +217,7 @@ export class Home extends LitElement {
         >
 
         <kor-card
-          label="(2017-2018) - CollectiveOne"
+          label="CollectiveOne"
           grid-cols="6"
           grid-cols-m="12"
           image="./src/assets/c1-logo.png"
@@ -242,12 +246,6 @@ export class Home extends LitElement {
             <kor-tag label="Postgres"></kor-tag>
           </div>
 
-          <div class="tag-container">
-            <div class="tag"></div>
-            <div class="tag"></div>
-            <div class="tag"></div>
-          </div>
-
           <p>The video below will give you an idea of what CollectiveOne is.</p>
 
           <video
@@ -257,7 +255,7 @@ export class Home extends LitElement {
         </kor-card>
 
         <kor-card
-          label="(2010-2016) - Aerospace Engineer"
+          label="Aerospace Engineer"
           grid-cols="6"
           grid-cols-m="12"
           image="./src/assets/ixv.jpg"
@@ -272,6 +270,12 @@ export class Home extends LitElement {
             <a href="https://www.linkedin.com/in/pepo/">LinkedIn</a> updated at
             that time. You can find more details there.
           </p>
+
+          <div class="tag-container">
+            <kor-tag label="Matlab"></kor-tag>
+            <kor-tag label="Simulink"></kor-tag>
+            <kor-tag label="C"></kor-tag>
+          </div>
 
           <p>
             Besides the different projects I worked in during my career as an
@@ -315,7 +319,7 @@ export class Home extends LitElement {
         >
 
         <kor-card
-          label="(2006-2009) - Academic Research"
+          label="Academic Research"
           grid-cols="6"
           grid-cols-m="12"
           image="./src/assets/academic.png"
@@ -331,12 +335,22 @@ export class Home extends LitElement {
 
           <p>
             I spent 5 years next to
-            <a href="https://www.gekant.it/">Prof. Enrico Canuto</a>, and dive
-            deep into the essence of modelling real-life systems for the purpose
-            of controlling them. Learned how either practice-only, or
+            <a href="https://www.gekant.it/">Prof. Enrico Canuto</a>, with whom
+            I deep dived into the essence of modelling real-life systems for the
+            purpose of controlling them. Learned how either practice-only, or
             theory-only approaches are comfortable and relatively simple, while
             the real challenge lies in combining the two.
           </p>
+
+          <p>Technologies used:</p>
+
+          <div class="tag-container">
+            <kor-tag label="circuit design"></kor-tag>
+            <kor-tag label="microcontrollers"></kor-tag>
+            <kor-tag label="pcb"></kor-tag>
+            <kor-tag label="C"></kor-tag>
+            <kor-tag label="C#"></kor-tag>
+          </div>
 
           <p>
             During this time I built a relatively simple temperature control
