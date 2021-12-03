@@ -7,46 +7,58 @@ export class Home extends LitElement {
     return html`
       <kor-grid>
         <kor-card flat grid-cols="12"
-          ><img class="avatar" src="./src/assets/avatar.jpeg" />
+          ><img class="avatar" src="./src/assets/avatar.png" />
 
-          <h1 class="has-text-align-left" id="pepo">Pepo - About</h1>
-          <p>
-            <em
-              >Welcome to my personal website. I'm an entrepreneur and software
-              developer. My current focus is on designing and building
-              collaboration and coordination tools for communities on top of
-              web3.</em
-            >
-          </p>
-          <p>
-            <em
-              >I've been close to Ethereum since 2016, when I discovered "The
-              Dao", and I'm familiar with different web3 technologies and the
-              blockchain ecosystem in general.</em
-            >
-          </p>
-          <p>
-            <em
-              >After a long period of hard work, experimentation and learning as
-              an entrepreneur, I'm now moving forward and actively looking to
-              join an existing and experienced team to work with.
-            </em>
-          </p>
-          <p>
-            <em
-              >I live in a small town near Barcelona, Spain, and my goal is to
-              combine working as a software developer with spending time
-              outdoors with my kids and family. You can reach me on twitter at
-              <a href="https://twitter.com/pepoospina" target="_blank"
-                >@pepoospina</a
+          <kor-card grid-cols="12" flat
+            ><h2>Welcome to my personal website. I'm Pepo.</h2></kor-card
+          >
+
+          <kor-card grid-cols="12"
+            ><p>
+              <em>
+                I'm an entrepreneur and software developer. My current focus is
+                on designing and building collaboration and coordination tools
+                for communities on top of web3 technologies.</em
               >
-              or send me an email to
-              <a href="mailto:pepo.ospina@gmail.com">pepo.ospina@gmail.com</a
-              >.</em
-            >
-          </p></kor-card
-        >
-        <kor-card grid-cols="12" flat><h1>Projects</h1></kor-card>
+            </p>
+            <p>
+              <em
+                >I've been a DAO enthusiast since a long time, which made me
+                discover
+                <a
+                  href="https://web.archive.org/web/20160427120234/http://daohub.org/"
+                  >"The Dao"</a
+                >
+                in 2016. I'm lucky enough to have been close to Ethereum since
+                then and I'm familiar with different web3 technologies and the
+                blockchain ecosystem in general.</em
+              >
+            </p>
+            <p>
+              <em
+                >After a long period of hard work, experimentation and learning
+                as an entrepreneur, I'm now moving forward and actively looking
+                to join an existing and experienced team to work with.
+              </em>
+            </p>
+            <p>
+              <em
+                >I live in a small town near Barcelona, Spain, and my goal is to
+                combine working as a researcher and software developer with
+                spending time outdoors with my kids and family. If you want to
+                get in touch, you can find me on twitter at
+                <a href="https://twitter.com/pepoospina" target="_blank"
+                  >@pepoospina</a
+                >
+                or send me an email to
+                <a href="mailto:pepo.ospina@gmail.com">pepo.ospina@gmail.com</a
+                >.</em
+              >
+            </p></kor-card
+          >
+        </kor-card>
+
+        <kor-card grid-cols="12" flat><h2>Projects</h2></kor-card>
 
         <kor-card
           label="The Underscore Protocol (_Prtcl)"
@@ -57,7 +69,7 @@ export class Home extends LitElement {
           <p>
             _Prtcl started as a tool for collective content management inspired
             in GIT. It then evolved into a generic protocol for building
-            interoperable content-management applications were every digital
+            interoperable content-management applications were any digital
             object could be stored or forked on multiple platforms (including
             web3) and by different users.
           </p>
@@ -106,16 +118,20 @@ export class Home extends LitElement {
               interoperability and supporting forking and merging content from
               different platforms.
             </p>
+
             <p>
-              The same application could be configured to work in three modes: 
-              <ul>
-                  <li>Local, with content stored on the local device</li>
-                  <li>Web2, with content stored on a web-server</li>
-                  <li>Web3, with content stored on Ethreum and IPFS.</li>
-              </ul>
+              The same application could be configured to work in three modes:
             </p>
 
-            <p>The video below will give you an idea of what Intercreativity is.</p>
+            <ul>
+              <li>Local, with content stored on the local device.</li>
+              <li>Web2, with content stored on a web-server.</li>
+              <li>Web3, with content stored on Ethreum and IPFS.</li>
+            </ul>
+
+            <p>
+              The video below will give you an idea of what Intercreativity is:
+            </p>
 
             <p>
               <video
@@ -145,15 +161,20 @@ export class Home extends LitElement {
             </p>
 
             <p>
-              A Typescript library to build _Prtcl-compatible applications. It
-              is divided in different npm packages and included code for
+              A Typescript library for building _Prtcl-compatible applications.
+              It is divided in different npm packages and included code for
               handling _Prtcl objects locally and asynchronously storing/reading
               them on multiple _Prtcl remotes.
             </p>
 
             <p>
-              Check the documentation site above with all the details about the
-              architecture and features.
+              Check the
+              <a
+                href="https://uprtcl.github.io/js-uprtcl/guide/"
+                target="_blank"
+                >documentation</a
+              >
+              site with all the details about the architecture and its features.
             </p>
           </kor-accordion>
 
@@ -167,8 +188,13 @@ export class Home extends LitElement {
             </p>
 
             <p>
-              A NodeJS + DGraph backend to store and query linked _Prtcl
-              objects.
+              A NodeJS + DGraph backend to store and query linked _Prtcl objects
+              using _Prtcl own
+              <a
+                href="https://uprtcl.github.io/js-uprtcl/guide/04-querying.html"
+                target="_blank"
+                >query standard</a
+              >.
             </p>
             <p>
               It stores linked and nested _Prtcl objects and exposes endpoints
@@ -232,10 +258,16 @@ export class Home extends LitElement {
           </p>
 
           <p>
-            A tool for open and distributed collaboration. It was a web2
-            application for communities, included value tracking using
-            community-specific tokens and a hybrid chat/content-board approach
-            for holding conversations while curating common content.
+            A web2 application for open and distributed collaboration. It
+            included value tracking using community-specific tokens and a hybrid
+            chat/content-board feature for holding conversations and curating
+            common content.
+          </p>
+
+          <p>
+            Conversations channels included a chat and a board for "cards".
+            Channels could be freely nested in multiple levels, and one channel
+            could be included under different "parent" channels.
           </p>
 
           <p>Technologies used:</p>
@@ -268,8 +300,11 @@ export class Home extends LitElement {
             I worked as a researcher, a project engineer and project manager and
             used to keep my
             <a href="https://www.linkedin.com/in/pepo/">LinkedIn</a> updated at
-            that time. You can find more details there.
+            that time. You can find more details about that part of my career
+            there.
           </p>
+
+          <p>Technologies used:</p>
 
           <div class="tag-container">
             <kor-tag label="Matlab"></kor-tag>
@@ -380,6 +415,12 @@ export class Home extends LitElement {
   static get styles() {
     return [
       css`
+        a {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        p {
+          margin: 0.7rem 0rem;
+        }
         .avatar {
           width: 150px;
         }
