@@ -9,6 +9,18 @@ export class Home extends LitElement {
         <kor-card flat grid-cols="12"
           ><img class="avatar" src="./src/assets/avatar.png" />
 
+          <div class="icons-container">
+            <a href="https://github.com/pepoospina" target="_blank"
+              ><img class="icon" src="./src/assets/github.svg"
+            /></a>
+            <a href="https://twitter.com/pepoospina" target="_blank"
+              ><img class="icon" src="./src/assets/twitter.png"
+            /></a>
+            <a href="mailto:pepo.ospina@gmail.com" target="_blank"
+              ><img class="icon" src="./src/assets/mail.svg"
+            /></a>
+          </div>
+
           <h2>Welcome to my personal website. I'm Pepo.</h2>
 
           <kor-card
@@ -424,6 +436,13 @@ export class Home extends LitElement {
         }
         .avatar {
           width: 150px;
+        }
+        .icons-container {
+          margin-top: 12px;
+        }
+        .icon {
+          height: 36px;
+          margin-right: 1rem;
         }
         video {
           width: 100%;
