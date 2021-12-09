@@ -214,9 +214,7 @@ export class Home extends LitElement {
 
           <kor-accordion label="eth-uprtcl">
             <p class="links">
-              <a
-                href="https://github.com/uprtcl/js-uprtcl-server"
-                target="_blank"
+              <a href="https://github.com/uprtcl/eth-uprtcl" target="_blank"
                 >Github</a
               >
             </p>
