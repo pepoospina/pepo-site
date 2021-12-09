@@ -27,8 +27,8 @@ export class Home extends LitElement {
             ><p>
               <em>
                 I'm an entrepreneur and software developer. My current focus is
-                collaboration and coordination tools for communities on top of
-                web3 technologies.</em
+                on collaboration and coordination tools for communities on top
+                of web3 technologies.</em
               >
             </p>
             <p>
