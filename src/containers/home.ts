@@ -68,7 +68,7 @@ export class Home extends LitElement {
           >
         </kor-card>
 
-        <h2>Projects</h2>
+        <kor-card flat grid-cols="12"><h2>Projects</h2></kor-card>
 
         <kor-card
           label="The Underscore Protocol (_Prtcl)"
@@ -443,6 +443,10 @@ export class Home extends LitElement {
         .icon {
           height: 36px;
           margin-right: 1rem;
+        }
+        .heading-container {
+          width: 100%;
+          clear: both;
         }
         video {
           width: 100%;
