@@ -393,7 +393,7 @@ export class Home extends LitElement {
 
           <p class="links">
             <a
-              href="https://www.researchgate.net/scientific-contributions/Jose-Ospina-13810078"
+              href="https://vdocumento.com/tesis-imagenes-tactiles-jose-ospina.html"
               target="_blank"
               >Thesis</a
             >
@@ -401,10 +401,14 @@ export class Home extends LitElement {
 
           <p>
             As my final project, I ideated, designed and built a tactile image
-            transducer that converted visual images into tactile ones using an
-            electrode matrix. .
-          </p></kor-card
-        >
+            transducer that converted visual images from a web cam into tactile
+            stimlation patterns using an electrode matrix.
+          </p>
+          <p>
+            The work recevied the Otto de Greiff award, a national undergraduate
+            thesis contest.
+          </p>
+        </kor-card>
       </kor-grid>
     `;
   }
