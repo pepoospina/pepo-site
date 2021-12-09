@@ -9,21 +9,19 @@ export class Home extends LitElement {
         <kor-card flat grid-cols="12"
           ><img class="avatar" src="./src/assets/avatar.png" />
 
-          <kor-card grid-cols="12" flat
-            ><h2>Welcome to my personal website. I'm Pepo.</h2></kor-card
-          >
+          <h2>Welcome to my personal website. I'm Pepo.</h2>
 
-          <kor-card grid-cols="12"
+          <kor-card
             ><p>
               <em>
                 I'm an entrepreneur and software developer. My current focus is
-                on designing and building collaboration and coordination tools
-                for communities on top of web3 technologies.</em
+                collaboration and coordination tools for communities on top of
+                web3 technologies.</em
               >
             </p>
             <p>
               <em
-                >I've been a DAO enthusiast since a long time, which made me
+                >I've been a DAO enthusiast for a long time, which made me
                 discover
                 <a
                   href="https://web.archive.org/web/20160427120234/http://daohub.org/"
@@ -58,7 +56,7 @@ export class Home extends LitElement {
           >
         </kor-card>
 
-        <kor-card grid-cols="12" flat><h2>Projects</h2></kor-card>
+        <h2>Projects</h2>
 
         <kor-card
           label="The Underscore Protocol (_Prtcl)"
@@ -260,14 +258,13 @@ export class Home extends LitElement {
           <p>
             A web2 application for open and distributed collaboration. It
             included value tracking using community-specific tokens and a hybrid
-            chat/content-board feature for holding conversations and curating
-            common content.
+            chat/content-board feature for chatting and curating common content.
           </p>
 
           <p>
-            Conversations channels included a chat and a board for "cards".
-            Channels could be freely nested in multiple levels, and one channel
-            could be included under different "parent" channels.
+            Channels included a chat and a board for "cards" and could be freely
+            nested in multiple levels, while one channel could be included under
+            different "parent" channels.
           </p>
 
           <p>Technologies used:</p>
