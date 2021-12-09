@@ -233,8 +233,8 @@ var Ft=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShado
             ><p>
               <em>
                 I'm an entrepreneur and software developer. My current focus is
-                collaboration and coordination tools for communities on top of
-                web3 technologies.</em
+                on collaboration and coordination tools for communities on top
+                of web3 technologies.</em
               >
             </p>
             <p>
@@ -420,9 +420,7 @@ var Ft=window.ShadowRoot&&(void 0===window.ShadyCSS||window.ShadyCSS.nativeShado
 
           <kor-accordion label="eth-uprtcl">
             <p class="links">
-              <a
-                href="https://github.com/uprtcl/js-uprtcl-server"
-                target="_blank"
+              <a href="https://github.com/uprtcl/eth-uprtcl" target="_blank"
                 >Github</a
               >
             </p>
