@@ -78,10 +78,10 @@ export class Home extends LitElement {
         >
           <p>
             _Prtcl started as a tool for collective content management inspired
-            in GIT. It then evolved into a generic protocol for building
-            interoperable content-management applications were any digital
-            object could be stored or forked on multiple platforms (including
-            web3) and by different users.
+            in GIT. The project rapidly evolved into a generic protocol for
+            building interoperable content-management applications where any
+            digital object can be stored or forked on multiple platforms
+            (including web3) and by different users.
           </p>
 
           <p>Technologies used:</p>
