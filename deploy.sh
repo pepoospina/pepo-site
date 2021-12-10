@@ -14,4 +14,4 @@ echo $bucket;
 # Add 1yr cache to Assets
 aws s3 sync ./stage "$bucket" --acl public-read --delete
 
-# rm -rf ./stage
+rm -rf ./stage
