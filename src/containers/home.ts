@@ -46,9 +46,11 @@ export class Home extends LitElement {
             </p>
             <p>
               <em
-                >After a long period of hard work, experimentation and learning
-                as an entrepreneur, I'm now moving forward and actively looking
-                to join an existing and experienced team to work with.
+                >I've recently joined the
+                <a href="https://www.daostack.io" target="_blank">DAOstack</a>
+                team as a researcher, where I mix working on The Underscore
+                Protocol technology, with other DAOstack projects and the
+                intersection of the two.
               </em>
             </p>
             <p>
