@@ -73,7 +73,7 @@ export function Project(props: ProjectProps) {
         margin: "0px 0px",
         padding: "60px 0vw",
         borderRadius: "0px",
-        borderTop: "solid 4px #414e57",
+        borderTop: "solid 4px #dfdfcbff",
         backgroundColor: props.shade ? "#F4F4ED" : "#ececdf",
         width: "100%",
       }}
@@ -86,7 +86,9 @@ export function Project(props: ProjectProps) {
         <Box direction="column" align="center">
           <Box direction="row" align="center" style={{ width: "100%" }}>
             {props.logo !== undefined ? (
-              <Image height="80px" width="80px" src={props.logo}></Image>
+              <Box style={{ width: "80px" }}>
+                <Image fit="cover" src={props.logo}></Image>
+              </Box>
             ) : (
               <></>
             )}

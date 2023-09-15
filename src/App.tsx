@@ -16,79 +16,131 @@ function App() {
     <div className="App">
       <Grommet style={{ fontFamily: "'DM Sans', sans-serif" }}>
         <Box
-          style={{ height: "100vh", padding: "10vw 10vw" }}
+          style={{ height: "100vh", padding: "0vw 10vw" }}
           justify="center"
           align="center"
         >
-          <Box style={{ width: "200px" }}>
-            <Image
-              fit="cover"
-              src="https://pepo-public.s3.amazonaws.com/pepo-avatar.png"
-            ></Image>
-          </Box>
-          <Box style={{ fontSize: "100px", flexGrow: "1" }} justify="center">
-            Pepo
-          </Box>
-          <Box style={{ flexGrow: "1" }}>
-            <Box>Entrepeneur - Software Developer - Builder</Box>
-            <Box
-              style={{
-                padding: "30px",
-                textDecoration: "underline",
-                color: "rgb(49, 60, 160)",
-                maxWidth: "900px",
-                margin: "0 auto",
-              }}
-              direction="row"
-              justify="center"
-              wrap
-            >
-              {[
-                "blockchain",
-                "ethereum",
-                "daos",
-                "governance",
-                "decision-making",
-                "content-management",
-                "tools-for-thought",
-                "collective-intelligence",
-              ].map((tag) => {
-                return <Box style={{ margin: "0px 10px" }}>#{tag}</Box>;
-              })}
+          <Box style={{ height: "10vw", maxHeight: "100px" }}></Box>
+
+          <Box align="center" justify="center" style={{ flexGrow: "1" }}>
+            <Box style={{ width: "200px" }}>
+              <Image fit="cover" src="/pepo-avatar.png"></Image>
             </Box>
-            <Box direction="row" justify="center" align="center">
-              <a
-                href="https://github.com/pepoospina"
-                target="_blank"
-                rel="noreferrer"
+            <Box style={{ fontSize: "100px" }} justify="center">
+              <Text size="100px" color="#495059ff">
+                Pepo
+              </Text>
+            </Box>
+            <Box>
+              <Box>Entrepreneur - Software Developer - Builder</Box>
+              <Box
+                style={{
+                  padding: "36px",
+                  textDecoration: "underline",
+                  color: "rgb(49, 60, 160)",
+                  maxWidth: "900px",
+                  margin: "0 auto",
+                }}
+                direction="row"
+                justify="center"
+                wrap
               >
-                <Button
-                  secondary
-                  color="brand"
-                  style={{ width: "100px", fontWeight: "bold" }}
-                >
-                  <Text color="brand" size="medium">
-                    Github
-                  </Text>
-                </Button>
-              </a>
-              <a
-                href="https://x.com/pepoospina"
-                target="_blank"
-                rel="noreferrer"
+                {[
+                  "blockchain",
+                  "ethereum",
+                  "daos",
+                  "governance",
+                  "decision-making",
+                  "content-management",
+                  "tools-for-thought",
+                  "collective-intelligence",
+                ].map((tag) => {
+                  return <Box style={{ margin: "0px 10px" }}>#{tag}</Box>;
+                })}
+              </Box>
+              <Box
+                direction="row"
+                justify="center"
+                align="center"
+                style={{ marginTop: "24px" }}
               >
-                <Button
-                  secondary
-                  color="brand"
-                  style={{ width: "100px", fontWeight: "bold" }}
+                <a
+                  href="https://github.com/pepoospina"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <Text color="brand" size="medium">
-                    Twitter
-                  </Text>
-                </Button>
-              </a>
+                  <Box align="center" style={{ margin: "0px 12px" }}>
+                    <Box style={{ width: "60px" }}>
+                      <Image fit="cover" src="/Github.svg"></Image>
+                    </Box>
+
+                    {/* <Button
+                    secondary
+                    color="brand"
+                    style={{
+                      width: "100px",
+                      fontWeight: "bold",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Text color="brand" size="medium">
+                      Github
+                    </Text>
+                  </Button> */}
+                  </Box>
+                </a>
+
+                <a
+                  href="https://x.com/pepoospina"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Box align="center" style={{ margin: "0px 12px" }}>
+                    <Box style={{ width: "60px" }}>
+                      <Image fit="cover" src="/twitter.svg"></Image>
+                    </Box>
+
+                    {/* <Button
+                    secondary
+                    color="brand"
+                    style={{
+                      width: "100px",
+                      fontWeight: "bold",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Text color="brand" size="medium">
+                      Twitter
+                    </Text>
+                  </Button> */}
+                  </Box>
+                </a>
+
+                <a href="mailto:pepo.ospina@gmail.com">
+                  <Box align="center" style={{ margin: "0px 12px" }}>
+                    <Box style={{ width: "60px" }}>
+                      <Image fit="cover" src="/email.svg"></Image>
+                    </Box>
+
+                    {/* <Button
+                    secondary
+                    color="brand"
+                    style={{
+                      width: "100px",
+                      fontWeight: "bold",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Text color="brand" size="medium">
+                      Email
+                    </Text>
+                  </Button> */}
+                  </Box>
+                </a>
+              </Box>
             </Box>
           </Box>
+
           <Button style={{ padding: "8px 40px" }} onClick={() => clickDown()}>
             <Box
               direction="row"
@@ -133,7 +185,7 @@ function App() {
                 </p>
 
                 <p>
-                  The project was built from scratch by a team of 4 inside of{" "}
+                  The project was built from scratch by a team of 4 inside{" "}
                   <a
                     href="https://daostack.io/"
                     target="_blank"
@@ -147,10 +199,10 @@ function App() {
                 </p>
 
                 <p>
-                  The architecture was purposedly built to facilitate the
-                  integration with different Web2 platforms and the
-                  implementation of any set of rules that would convert Web2
-                  activity on Web3 rewards.
+                  The architecture was purposely built to facilitate the
+                  integration with different Web2 platforms and to facilitate
+                  the implementation of any set of rules that would convert Web2
+                  activity on Web3 rewards from third parties.
                 </p>
 
                 <p>
@@ -170,15 +222,17 @@ function App() {
 
                     <p>
                       The frontend dynamically loaded and displayed components
-                      for each ruleset that was available on an independent
-                      ruleset library.
+                      for each ruleset available on an independent repository
+                      that served as the ruleset library.
                     </p>
 
                     <p>
                       New rulesets, including their UI components, could then be
-                      independenlty developed and dynamically integrated in the
-                      app.
+                      independently developed, making the addition of new
+                      rulesets straightforward.
                     </p>
+
+                    <p>The code for this tool is currently not open source.</p>
                   </>
                 ),
                 links: [],
@@ -199,9 +253,11 @@ function App() {
                     </p>
 
                     <p>
-                      It also served as an API to fetch data about runing
+                      It also served as an API to fetch data about running
                       campaigns.
                     </p>
+
+                    <p>The code for this tool is currently not open source.</p>
                   </>
                 ),
               },
@@ -220,8 +276,19 @@ function App() {
 
                     <p>
                       The "trust design" was optimistic, allowing the campaign
-                      creator to block a new share-holders distribution after it
+                      creator to block a new shareholders' distribution after it
                       was published by the Oracle.
+                    </p>
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/Common-Value/contracts"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
                     </p>
                   </>
                 ),
@@ -298,9 +365,10 @@ function App() {
                   <>
                     <p>
                       Intercreativity is a block-based editor built on top of
-                      _Prtcl. Inspired in tools like Notion or Roam Research but
-                      built for interoperability and supporting forking and
-                      merging content and and from different platforms.
+                      _Prtcl and using LitElement web-components. It is inspired
+                      in tools like Notion or Roam Research but built for
+                      interoperability and supporting forking and merging
+                      content from different platforms.
                     </p>
 
                     <p>
@@ -319,6 +387,17 @@ function App() {
                       >
                         project's page
                       </a>
+                    </p>
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/uprtcl/linked-thoughts"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
                     </p>
                   </>
                 ),
@@ -350,6 +429,18 @@ function App() {
                       site to see more details about the architecture and its
                       features.
                     </p>
+
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/uprtcl/js-uprtcl"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
+                    </p>
                   </>
                 ),
               },
@@ -376,6 +467,17 @@ function App() {
                       This index can be used to build content-management
                       applications.
                     </p>
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/uprtcl/js-uprtcl-server"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
+                    </p>
                   </>
                 ),
               },
@@ -392,6 +494,18 @@ function App() {
                     <p>
                       It also includes a prototype for a naming system based on
                       harberger taxes.
+                    </p>
+                    <p>
+                      You can check the code for the content management and the
+                      naming system{" "}
+                      <a
+                        href="https://github.com/uprtcl/eth-uprtcl"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
                     </p>
                   </>
                 ),
@@ -414,15 +528,27 @@ function App() {
                       to a non-for-profit DAO legally incorported in Vermont.
                     </p>
                     <p>
-                      The process is similar to the one{" "}
+                      The design is similar to the one{" "}
                       <a
                         href="https://techcrunch.com/2019/03/11/openai-shifts-from-nonprofit-to-capped-profit-to-attract-capital/?guccounter=1&guce_referrer=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnLw&guce_referrer_sig=AQAAADV0ny3oI_DyDyxDrcvWIslzoEBTs5_YfkVhjf8okoiPnpvWNk9S7fASrG7k3Nv5NZuvWvpZtc2eC-L3X25B6J8aJ4b3Q53HK44dvGrn_SDNYlpr_F6XDAggh5hWgdQPsfk2rvLWfmj5yzKSn9UFzJOxFuD_s9_WRu_7es4SBMcH"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        recently chosen{" "}
+                        recently chosen
+                      </a>{" "}
+                      by OpenAI, as their capped investment model.
+                    </p>
+                    <p>
+                      You can check the code for the onchain implementation part
+                      of the model{" "}
+                      <a
+                        href="https://github.com/uprtcl/reasonable"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
                       </a>
-                      by OpenAI.
+                      .
                     </p>
                   </>
                 ),
@@ -434,6 +560,7 @@ function App() {
             name="CollectiveOne"
             role="Founder, Architect and Development lead"
             codeUrl="https://github.com/Common-Value"
+            logo="/C1.png"
             demo={
               <video
                 controls
@@ -446,21 +573,29 @@ function App() {
               <>
                 <p>
                   Web2 application for open and distributed collaboration. It
-                  included value tracking using community-specific tokens and a
-                  hybrid chat/content-board feature for chatting and curating
-                  common content.
+                  included value-tracking using community-specific tokens and a
+                  hybrid chat/content-board feature for discussing and curating
+                  content.
                 </p>
                 <p>
-                  Channels included a chat and a board for "cards" and could be
-                  freely nested in multiple levels, while one channel could be
-                  included under different "parent" channels.
+                  It supported an advanced and flexible content architecture
+                  where each "channel" consisted of a chat and a board for
+                  "cards". Channel could then be nested in multiple levels,
+                  while one channel could be included under different "parent"
+                  channels.
                 </p>
                 <p>
                   The app mixed project-centric display, where all members of
                   the organization would see the same content structure, with
                   agent-centric display, where each member of the organization
-                  could include personal notes and content next to the shared
-                  one.
+                  could include personal notes and private content next to the
+                  shared one.
+                </p>
+                <p>
+                  The app also supported peer-reviewed value distribution, where
+                  each team would split a bag of tokens among them by averging
+                  the subjective value attribution provided by each member of
+                  the team.
                 </p>
               </>
             }
@@ -472,16 +607,21 @@ function App() {
                 summary: (
                   <>
                     <p>
-                      A web2 application for open and distributed collaboration.
-                      It included value tracking using community-specific tokens
-                      and a hybrid chat/content-board feature for chatting and
-                      curating common content.
+                      The frontend was a VueJS application. It supported all the
+                      features mentioned above on the project description,
+                      namely: Multichannel chat and card boads, token creation
+                      and transfer.
                     </p>
-
                     <p>
-                      Channels included a chat and a board for "cards" and could
-                      be freely nested in multiple levels, while one channel
-                      could be included under different "parent" channels.{" "}
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/CollectiveOne/CollectiveOneWebapp/tree/master/frontend"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
                     </p>
                   </>
                 ),
@@ -499,12 +639,29 @@ function App() {
                       email notifications, websockets, data indexing and
                       querying and more.
                     </p>
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/CollectiveOne/CollectiveOneWebapp/tree/master/backend"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
+                    </p>
                   </>
                 ),
                 links: [],
               },
             ]}
           ></Project>
+        </Box>
+        <Box style={{ height: "180px" }} justify="center">
+          <Text size="small">Built by Pepo / 2023</Text>
+          <a href="mailto:pepo.ospina@gmail.com">
+            <Text size="small">pepo.ospina@gmail.com</Text>
+          </a>
         </Box>
       </Grommet>
     </div>
