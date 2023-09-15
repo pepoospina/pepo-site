@@ -32,7 +32,9 @@ function App() {
               </Text>
             </Box>
             <Box>
-              <Box>Entrepreneur - Software Developer - Builder</Box>
+              <Box style={{ margin: "3vw 0px" }}>
+                Entrepreneur - Software Developer - Builder
+              </Box>
               <Box
                 style={{
                   padding: "36px",
