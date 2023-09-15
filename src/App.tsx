@@ -139,6 +139,32 @@ function App() {
                   </Button> */}
                   </Box>
                 </a>
+
+                <a
+                  href="https://www.linkedin.com/in/pepo/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Box align="center" style={{ margin: "0px 12px" }}>
+                    <Box style={{ width: "60px" }}>
+                      <Image fit="cover" src="/linkedin.svg"></Image>
+                    </Box>
+
+                    {/* <Button
+                    secondary
+                    color="brand"
+                    style={{
+                      width: "100px",
+                      fontWeight: "bold",
+                      marginTop: "8px",
+                    }}
+                  >
+                    <Text color="brand" size="medium">
+                      Email
+                    </Text>
+                  </Button> */}
+                  </Box>
+                </a>
               </Box>
             </Box>
           </Box>
