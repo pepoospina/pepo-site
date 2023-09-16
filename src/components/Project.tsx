@@ -83,11 +83,18 @@ export function Project(props: ProjectProps) {
         align="center"
         style={{ maxWidth: "800px", width: "100%" }}
       >
-        <Box direction="column" align="center">
+        <Box direction="column" align="center" style={{ padding: "0px 24px" }}>
           <Box direction="row" align="center" style={{ width: "100%" }}>
             {props.logo !== undefined ? (
-              <Box style={{ width: "80px" }}>
-                <Image fit="cover" src={props.logo}></Image>
+              <Box
+                style={{
+                  width: "20vw",
+                  maxWidth: "180px",
+                  maxHeight: "180px",
+                  minWidth: "60px",
+                }}
+              >
+                <Image fit="contain" src={props.logo}></Image>
               </Box>
             ) : (
               <></>
@@ -95,7 +102,11 @@ export function Project(props: ProjectProps) {
 
             <Heading
               level="2"
-              style={{ width: "100%", textAlign: "left", paddingLeft: "25px" }}
+              style={{
+                width: "100%",
+                textAlign: "center",
+                paddingLeft: "25px",
+              }}
             >
               {props.name}
             </Heading>
@@ -104,16 +115,16 @@ export function Project(props: ProjectProps) {
         <Box
           style={{
             borderRadius: "0px",
-            padding: "0px 0vw 0px 0vw",
+            padding: "0px 24px",
             margin: "5vw 0vw",
             width: "100%",
           }}
         >
           <Box>
-            <Heading level="4" style={{ width: "100%", margin: "0 auto" }}>
+            <Heading level="3" style={{ width: "100%", margin: "0 auto" }}>
               {props.subtitle}
             </Heading>
-            <Text size="medium" style={{ margin: "12px 0px 0px 0px" }}>
+            <Text size="medium" style={{ margin: "3vw 0px 2vw 0px" }}>
               {props.role}
             </Text>
           </Box>

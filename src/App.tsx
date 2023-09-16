@@ -16,8 +16,8 @@ function IconImg(props: IconLinkProps) {
           style={{
             width: "12vw",
             height: "12vw",
-            maxWidth: "80px",
-            maxHeight: "80px",
+            maxWidth: "60px",
+            maxHeight: "60px",
             minWidth: "24px",
           }}
         >
@@ -78,16 +78,19 @@ function App() {
               </Text>
             </Box>
             <Box>
-              <Box style={{ margin: "3vw 0px" }}>
+              <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
+              <Box style={{ margin: "0px 0px" }}>
                 Entrepreneur - Software Developer - Builder
               </Box>
+              <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
+              <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
               <Box
                 style={{
                   padding: "0px 0px",
                   textDecoration: "underline",
                   color: "rgb(49, 60, 160)",
                   maxWidth: "900px",
-                  margin: "3vw auto",
+                  margin: "0 auto",
                 }}
                 direction="row"
                 justify="center"
@@ -95,17 +98,18 @@ function App() {
               >
                 {[
                   "blockchain",
+                  "tools-for-thought",
                   "ethereum",
                   "daos",
                   "governance",
                   "decision-making",
                   "content-management",
-                  "tools-for-thought",
                   "collective-intelligence",
                 ].map((tag) => {
                   return <Box style={{ margin: "0px 10px" }}>#{tag}</Box>;
                 })}
               </Box>
+              <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
               <Box
                 direction="row"
                 justify="center"
@@ -562,7 +566,7 @@ function App() {
               ></video>
             }
             links={[]}
-            subtitle={`A modern tool for communities comunication and decision making.`}
+            subtitle={`An experimental tool for comunication and decision making`}
             summary={
               <>
                 <p>
