@@ -199,8 +199,8 @@ function App() {
                 <p>
                   The architecture was purposely built to facilitate the
                   integration with different Web2 platforms and to facilitate
-                  the implementation of any set of rules that would convert Web2
-                  activity on Web3 rewards from third parties.
+                  the implementation, by third parties, of any set of rules that
+                  would convert Web2 activity on Web3 rewards.
                 </p>
 
                 <p>
@@ -273,9 +273,10 @@ function App() {
                     </p>
 
                     <p>
-                      The "trust design" was optimistic, allowing the campaign
-                      creator to block a new shareholders' distribution after it
-                      was published by the Oracle.
+                      The "trust design" was optimistic, giving a time window
+                      for the campaign creator to block an update to the
+                      campaign shareholders after it was published by the
+                      Oracle.
                     </p>
                     <p>
                       You can check the code{" "}
@@ -578,7 +579,7 @@ function App() {
                 <p>
                   It supported an advanced and flexible content architecture
                   where each "channel" consisted of a chat and a board for
-                  "cards". Channel could then be nested in multiple levels,
+                  "cards". Channels could then be nested in multiple levels,
                   while one channel could be included under different "parent"
                   channels.
                 </p>
