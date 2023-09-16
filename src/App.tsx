@@ -3,6 +3,45 @@ import { Box, Button, Grommet, Heading, Image, Text } from "grommet";
 import { Project } from "./components/Project";
 import { CaretDownFill } from "grommet-icons";
 
+interface IconLinkProps {
+  _href: string;
+  _src: string;
+}
+
+function IconImg(props: IconLinkProps) {
+  return (
+    <a href={props._href} target="_blank" rel="noreferrer">
+      <Box align="center" style={{ margin: "0px 12px" }}>
+        <Box
+          style={{
+            width: "12vw",
+            height: "12vw",
+            maxWidth: "80px",
+            maxHeight: "80px",
+            minWidth: "24px",
+          }}
+        >
+          <Image fit="contain" src={props._src}></Image>
+        </Box>
+
+        {/* <Button
+      secondary
+      color="brand"
+      style={{
+        width: "100px",
+        fontWeight: "bold",
+        marginTop: "8px",
+      }}
+    >
+      <Text color="brand" size="medium">
+        Github
+      </Text>
+    </Button> */}
+      </Box>
+    </a>
+  );
+}
+
 function App() {
   const clickDown = () => {
     window.scrollTo({
@@ -23,8 +62,15 @@ function App() {
           <Box style={{ height: "10vw", maxHeight: "100px" }}></Box>
 
           <Box align="center" justify="center" style={{ flexGrow: "1" }}>
-            <Box style={{ width: "200px" }}>
-              <Image fit="cover" src="/pepo-avatar.png"></Image>
+            <Box
+              style={{
+                width: "20vw",
+                maxWidth: "300px",
+                maxHeight: "300px",
+                minWidth: "120px",
+              }}
+            >
+              <Image fit="contain" src="/pepo-avatar.png"></Image>
             </Box>
             <Box style={{ fontSize: "100px" }} justify="center">
               <Text size="100px" color="#495059ff">
@@ -37,11 +83,11 @@ function App() {
               </Box>
               <Box
                 style={{
-                  padding: "36px",
+                  padding: "0px 0px",
                   textDecoration: "underline",
                   color: "rgb(49, 60, 160)",
                   maxWidth: "900px",
-                  margin: "0 auto",
+                  margin: "3vw auto",
                 }}
                 direction="row"
                 justify="center"
@@ -66,105 +112,25 @@ function App() {
                 align="center"
                 style={{ marginTop: "24px" }}
               >
-                <a
-                  href="https://github.com/pepoospina"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Box align="center" style={{ margin: "0px 12px" }}>
-                    <Box style={{ width: "60px" }}>
-                      <Image fit="cover" src="/Github.svg"></Image>
-                    </Box>
+                <IconImg
+                  _href="https://github.com/pepoospina"
+                  _src="/Github.svg"
+                ></IconImg>
 
-                    {/* <Button
-                    secondary
-                    color="brand"
-                    style={{
-                      width: "100px",
-                      fontWeight: "bold",
-                      marginTop: "8px",
-                    }}
-                  >
-                    <Text color="brand" size="medium">
-                      Github
-                    </Text>
-                  </Button> */}
-                  </Box>
-                </a>
+                <IconImg
+                  _href="https://x.com/pepoospina"
+                  _src="/twitter.svg"
+                ></IconImg>
 
-                <a
-                  href="https://x.com/pepoospina"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Box align="center" style={{ margin: "0px 12px" }}>
-                    <Box style={{ width: "60px" }}>
-                      <Image fit="cover" src="/twitter.svg"></Image>
-                    </Box>
+                <IconImg
+                  _href="mailto:pepo.ospina@gmail.com"
+                  _src="/email.svg"
+                ></IconImg>
 
-                    {/* <Button
-                    secondary
-                    color="brand"
-                    style={{
-                      width: "100px",
-                      fontWeight: "bold",
-                      marginTop: "8px",
-                    }}
-                  >
-                    <Text color="brand" size="medium">
-                      Twitter
-                    </Text>
-                  </Button> */}
-                  </Box>
-                </a>
-
-                <a href="mailto:pepo.ospina@gmail.com">
-                  <Box align="center" style={{ margin: "0px 12px" }}>
-                    <Box style={{ width: "60px" }}>
-                      <Image fit="cover" src="/email.svg"></Image>
-                    </Box>
-
-                    {/* <Button
-                    secondary
-                    color="brand"
-                    style={{
-                      width: "100px",
-                      fontWeight: "bold",
-                      marginTop: "8px",
-                    }}
-                  >
-                    <Text color="brand" size="medium">
-                      Email
-                    </Text>
-                  </Button> */}
-                  </Box>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/in/pepo/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Box align="center" style={{ margin: "0px 12px" }}>
-                    <Box style={{ width: "60px" }}>
-                      <Image fit="cover" src="/linkedin.svg"></Image>
-                    </Box>
-
-                    {/* <Button
-                    secondary
-                    color="brand"
-                    style={{
-                      width: "100px",
-                      fontWeight: "bold",
-                      marginTop: "8px",
-                    }}
-                  >
-                    <Text color="brand" size="medium">
-                      Email
-                    </Text>
-                  </Button> */}
-                  </Box>
-                </a>
+                <IconImg
+                  _href="https://www.linkedin.com/in/pepo"
+                  _src="/linkedin.svg"
+                ></IconImg>
               </Box>
             </Box>
           </Box>
