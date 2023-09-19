@@ -89,8 +89,8 @@ export function Project(props: ProjectProps) {
               <Box
                 style={{
                   width: "20vw",
-                  maxWidth: "180px",
-                  maxHeight: "180px",
+                  maxWidth: "120px",
+                  maxHeight: "120px",
                   minWidth: "60px",
                 }}
               >
