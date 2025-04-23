@@ -97,14 +97,12 @@ function App() {
                 wrap
               >
                 {[
+                  "fullstack",
                   "blockchain",
-                  "tools-for-thought",
                   "ethereum",
-                  "daos",
-                  "governance",
-                  "decision-making",
-                  "content-management",
-                  "collective-intelligence",
+                  "web3",
+                  "social-networks",
+                  "note-taking-apps",
                 ].map((tag) => {
                   return <Box style={{ margin: "0px 10px" }}>#{tag}</Box>;
                 })}
@@ -160,7 +158,7 @@ function App() {
         >
           <Project
             shade
-            logo="https://pepo-public.s3.amazonaws.com/logo-cv.png"
+            logo="/cv-logo.png"
             name="CommonValue"
             codeUrl="https://github.com/Common-Value"
             demo={
@@ -299,7 +297,7 @@ function App() {
             name="Underscore Protocol"
             role="Founder, Architect and Development lead"
             codeUrl="https://github.com/uprtcl"
-            logo="https://pepo-public.s3.amazonaws.com/uprtcl-logo.png"
+            logo="/uprtcl-logo.png"
             demo={
               <video
                 controls
@@ -657,7 +655,7 @@ function App() {
           ></Project>
         </Box>
         <Box style={{ height: "180px" }} justify="center">
-          <Text size="small">Built by Pepo / 2023</Text>
+          <Text size="small">Built by Pepo / 2025</Text>
           <a href="mailto:pepo.ospina@gmail.com">
             <Text size="small">pepo.ospina@gmail.com</Text>
           </a>
