@@ -301,7 +301,7 @@ function App() {
             demo={
               <video
                 controls
-                src="https://collectiveone-t1.s3.us-east-2.amazonaws.com/Intercreativity-Personal-Site.webm"
+                src="https://storage.googleapis.com/pepo-site-r/Intercreativity-Personal-Site.webm"
               ></video>
             }
             subtitle={`Multiplatform content management inspired in GIT`}
@@ -561,7 +561,7 @@ function App() {
             demo={
               <video
                 controls
-                src="https://collectiveone-t1.s3.us-east-2.amazonaws.com/c1-pepo-site.webm"
+                src="https://storage.googleapis.com/pepo-site-r/c1-pepo-site.webm"
               ></video>
             }
             links={[]}
