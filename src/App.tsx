@@ -170,22 +170,22 @@ function App() {
             summary={
               <>
                 <p>
-                  I joined as CTO and co-founder to this project and helped develop
-                  different prototypes to explore the way social networks can be
+                  I joined this project as CTO and co-founder and helped develop
+                  different prototypes to explore how social networks can be
                   used by scientists as a formal part of their scientific work.
                 </p>
 
                
                 <p>
-                  The process included the use of AI to annotate the original post with keywords 
+                  The process included the use of AI to annotate the original posts with keywords 
                   and other RDF links so that the posts created a global knowledge graph published
                   to the <a href="https://nanopub.net/" target="_blank" rel="noreferrer">nanopublications network</a>.
                 </p>
 
                 <p>
-                  On the second iteration we focused on the AI annotation and built an app that 
+                  In the second iteration, we focused on AI annotation and built an app that 
                   allowed users to create cross-platform lists, process their posts with AI annotations,
-                  and then navigate these feeds with the enhanced annotations and hyperlinks to jump between
+                  and then navigate these feeds with enhanced annotations and hyperlinks to jump between
                   feeds.
                 </p>
               </>
@@ -224,7 +224,7 @@ function App() {
                   A microdemocracy is a safe space with decentralized onchain membership control
                   based on a web of trust.
                   
-                  Members can then post questions or create polls on it, while 
+                  Members can post questions or create polls, while 
                   other members can answer them. 
                   
                   The answers remain completely anonymous, and their anonymity is guaranteed by
@@ -232,12 +232,12 @@ function App() {
                 </p>
 
                 <p>
-                  This is a small side-project I built and maintained for a few months as I was exploring
-                  DAO-applications that went closer to solving the real needs of communities.
+                  This is a small side-project I built and maintained for a few months while exploring
+                  DAO applications that addressed the real needs of communities more effectively.
                 </p>
 
                 <p>
-                  It included a community bootstrapping smart contract and a backend and frontend apps to
+                  It included a community bootstrapping smart contract along with backend and frontend apps to
                   handle anonymous publications and reactions using ZK-proofs.
                 </p>
               </>
@@ -281,14 +281,14 @@ function App() {
                     <p>
                       I experimented with {" "}
                       <a href="https://www.erc4337.io/docs" target="_blank" rel="noreferrer">AccountAbstraction and EIP-4337</a>, 
-                      so that actions taking from the app was executed using 
-                      user operations that did not required having funds to pay 
+                      so that actions taken from the app were executed using 
+                      user operations that did not require having funds to pay 
                       for the transaction.
                     </p>
 
                     <p>
-                      I also integrated Wallet-as-a-Service solution to handle an ethereum 
-                      wallet for users that did not have one.
+                      I also integrated a Wallet-as-a-Service solution to handle an Ethereum 
+                      wallet for users who did not have one.
                     </p>
                   </>
                 ),
@@ -449,15 +449,15 @@ function App() {
             summary={
               <>
                 <p>
-                  The Underscore Protocol is a protocol and a set of tools for
+                  The Underscore Protocol is a protocol and set of tools for
                   building interoperable content-management applications where
-                  any digital object can be stored or forked on multiple
-                  platforms (including web3) and by different users.
+                  any digital object can be stored or forked across multiple
+                  platforms (including web3) by different users.
                 </p>
                 <p>
                   Working on _Prtcl comprised the development of different tools
-                  on top of different platforms and technologies. For a detailed
-                  overview of the protocol, check it's{" "}
+                  on top of various platforms and technologies. For a detailed
+                  overview of the protocol, check its{" "}
                   <a
                     href="https://uprtcl.github.io/js-uprtcl/guide/"
                     target="_blank"
@@ -649,7 +649,7 @@ function App() {
               },
               {
                 name: "Reasonable",
-                type: "Exit-to-comunity Legal Entities",
+                type: "Exit-to-community Legal Entities",
                 links: [],
                 summary: (
                   <>
@@ -659,10 +659,10 @@ function App() {
                       development.
                     </p>
                     <p>
-                      It includes an enforced exit-to community scheme where
+                      It includes an enforced exit-to-community scheme where
                       investment is only provided as loans that, once paid back,
                       transfer the ownership of all the assets of the protocol
-                      to a non-for-profit DAO legally incorported in Vermont.
+                      to a not-for-profit DAO legally incorporated in Vermont.
                     </p>
                     <p>
                       The design is similar to the one{" "}
@@ -705,7 +705,7 @@ function App() {
               ></video>
             }
             links={[]}
-            subtitle={`An experimental tool for comunication and decision making`}
+            subtitle={`An experimental tool for communication and decision making`}
             summary={
               <>
                 <p>
@@ -726,11 +726,11 @@ function App() {
                   the organization would see the same content structure, with
                   agent-centric display, where each member of the organization
                   could include personal notes and private content next to the
-                  shared one.
+                  shared content.
                 </p>
                 <p>
                   The app also supported peer-reviewed value distribution, where
-                  each team would split a bag of tokens among them by averging
+                  each team would split a bag of tokens among themselves by averaging
                   the subjective value attribution provided by each member of
                   the team.
                 </p>
@@ -745,8 +745,8 @@ function App() {
                   <>
                     <p>
                       The frontend was a VueJS application. It supported all the
-                      features mentioned above on the project description,
-                      namely: Multichannel chat and card boads, token creation
+                      features mentioned above in the project description,
+                      namely: Multichannel chat and card boards, token creation
                       and transfer.
                     </p>
                     <p>
@@ -770,11 +770,11 @@ function App() {
                 summary: (
                   <>
                     <p>
-                      An API that will serve the frontend application. It was
-                      built in Java, the first technology I learnt for Web
+                      An API that served the frontend application. It was
+                      built in Java, the first technology I learned for Web
                       development. It included a plethora of features, including
-                      email notifications, websockets, data indexing and
-                      querying and more.
+                      email notifications, websockets, data indexing,
+                      querying, and more.
                     </p>
                     <p>
                       You can check the code{" "}
@@ -795,7 +795,7 @@ function App() {
           ></Project>
         </Box>
         <Box style={{ height: "180px" }} justify="center">
-          <Text size="small">Built by Pepo / 2025</Text>
+          <Text size="small">Built by Pepo © 2025</Text>
           <a href="mailto:pepo.ospina@gmail.com">
             <Text size="small">pepo.ospina@gmail.com</Text>
           </a>
