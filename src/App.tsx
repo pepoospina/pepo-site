@@ -158,6 +158,57 @@ function App() {
         >
           <Project
             shade
+            logo="/cosmik-logo.jpg"
+            name="Cosmik Network"
+            codeUrl="https://github.com/Common-SenseMakers/sensemakers"
+            demo={
+              <a href="https://app.cosmik.network/" target="_blank" rel="noreferrer">Prototype</a>
+            }
+            subtitle={`Cross-platform social media aggregator for scientists`}
+            role="Architecture and Development lead"
+            links={['https://bsky.app/profile/cosmik.network']}
+            summary={
+              <>
+                <p>
+                  I joined as CTO and co-founder to this project and helped develop
+                  different prototypes to explore the way social networks can be
+                  used by scientists as a formal part of their scientific work.
+                </p>
+
+               
+                <p>
+                  The process included the use of AI to annotate the original post with keywords 
+                  and other RDF links so that the posts created a global knowledge graph published
+                  to the <a href="https://nanopub.net/" target="_blank" rel="noreferrer">nanopublications network</a>.
+                </p>
+
+                <p>
+                  On the second iteration we focused on the AI annotation and built an app that 
+                  allowed users to create cross-platform lists, process their posts with AI annotations,
+                  and then navigate these feeds with the enhanced annotations and hyperlinks to jump between
+                  feeds.
+                </p>
+              </>
+            }
+            technologies={["Bluesky", "RDF", "AI", "LLMs", "React", "NodeJS", "Firebase"]}
+            subprojects={[
+              {
+                name: "Cross-platform Social Media Annotation tool",
+                type: "Web application",
+                summary: (
+                  <>
+                    <p>The application was built by a team of 4, with me as technical lead, one designer, and two other developers.</p>
+
+                    <p>
+                      It was built on top of Google Firebase infrastructure.
+                    </p>
+                  </>
+                ),
+                links: [],
+              }
+            ]}
+          ></Project>
+          <Project
             logo="/mr-logo.png"
             name="Microdemocracies"
             codeUrl="https://github.com/pepoospina/microdemocracies"
