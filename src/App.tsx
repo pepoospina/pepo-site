@@ -215,7 +215,7 @@ function App() {
             demo={
              <Box><Image fit="contain" src="/mr-MVP 01.png"></Image><Image fit="contain" src="/mr-MVP 02.png"></Image></Box>
             }
-            subtitle={`Tool for launching onchain communities with ZK anonynous voting`}
+            subtitle={`Tool for launching onchain communities with ZK anonymous voting`}
             role="Founder, Architecture and Development lead"
             links={['https://warpcast.com/microdemocracies/0xe9af72f5']}
             summary={
