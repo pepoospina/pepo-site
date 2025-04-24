@@ -158,6 +158,94 @@ function App() {
         >
           <Project
             shade
+            logo="/mr-logo.png"
+            name="Microdemocracies"
+            codeUrl="https://github.com/pepoospina/microdemocracies"
+            demo={
+             <></>
+            }
+            subtitle={`Tool for launching onchain communities with ZK anonynous voting`}
+            role="Founder, Architecture and Development lead"
+            links={['https://warpcast.com/microdemocracies/0xe9af72f5']}
+            summary={
+              <>
+                <p>
+                  A microdemocracy is a safe space with decentralized onchain membership control
+                  based on a web of trust.
+                  
+                  Members can then post questions or create polls on it, while 
+                  other members can answer them. 
+                  
+                  The answers remain completely anonymous, and their anonymity is guaranteed by
+                  ZK-proofs.
+                </p>
+
+                <p>
+                  This is a small side-project I build and maintained for a few months as I was exploring
+                  DAO-applications that went closer to fixing real needs of communities.
+                </p>
+
+                <p>
+                  It included a community bootstrapping smart contract, a backend and frontend apps that will
+                  handle anonymous publications and reactions using ZK-proofs.
+                </p>
+              </>
+            }
+            technologies={["ZK-proofs", "Typescript", "Ethereum", "React", "NodeJS"]}
+            subprojects={[
+              {
+                name: "Community/DAO Bootstrapping Contracts",
+                type: "Ethereum Smart Contracts",
+                summary: (
+                  <>
+                    <p>Smart contracts that allow the creation of a community/DAO with decentralized membership control.</p>
+
+                    <p>
+                      A set of founders can each invite other people. These new members can further invite others. If someone 
+                      adds a member without respecting the membership rules for that community/DAO, other members can expel the 
+                      new member, automatically expelling all the members they invited.
+                    </p>
+
+                    <p>
+                      You can check the code{" "}
+                      <a
+                        href="https://github.com/pepoospina/microdemocracies/tree/main/contracts"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        here
+                      </a>
+                      .
+                    </p>
+                  </>
+                ),
+                links: [],
+              },
+              {
+                name: "No-Wallet Blockchain App",
+                type: "EIP-4337 compatible app",
+                links: [],
+                summary: (
+                  <>
+                    <p>
+                      I experimented with {" "}
+                      <a href="https://www.erc4337.io/docs" target="_blank" rel="noreferrer">AccountAbstraction and EIP-4337</a>, 
+                      so that actions taking from the app was executed using 
+                      user operations that did not required having funds to pay 
+                      for the transaction.
+                    </p>
+
+                    <p>
+                      I also integrated Wallet-as-a-Service solution to handle an ethereum 
+                      wallet for users that did not have one.
+                    </p>
+                  </>
+                ),
+              },
+            ]}
+          ></Project>
+          <Project
+            shade
             logo="/cv-logo.png"
             name="CommonValue"
             codeUrl="https://github.com/Common-Value"
@@ -292,6 +380,7 @@ function App() {
               },
             ]}
           ></Project>
+          
 
           <Project
             name="Underscore Protocol"

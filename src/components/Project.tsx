@@ -248,7 +248,7 @@ export function Project(props: ProjectProps) {
                 return (
                   <AccordionPanel
                     label={
-                      <Box direction="column" style={{ padding: "3vw 0" }}>
+                      <Box direction="column" align="start" style={{ padding: "3vw 0" }}>
                         <Heading
                           style={{
                             margin: "0",
