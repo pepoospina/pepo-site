@@ -213,7 +213,7 @@ function App() {
             name="Microdemocracies"
             codeUrl="https://github.com/pepoospina/microdemocracies"
             demo={
-             <></>
+             <Box><Image fit="contain" src="/mr-MVP 01.png"></Image><Image fit="contain" src="/mr-MVP 02.png"></Image></Box>
             }
             subtitle={`Tool for launching onchain communities with ZK anonynous voting`}
             role="Founder, Architecture and Development lead"
@@ -232,12 +232,12 @@ function App() {
                 </p>
 
                 <p>
-                  This is a small side-project I build and maintained for a few months as I was exploring
-                  DAO-applications that went closer to fixing real needs of communities.
+                  This is a small side-project I built and maintained for a few months as I was exploring
+                  DAO-applications that went closer to solving the real needs of communities.
                 </p>
 
                 <p>
-                  It included a community bootstrapping smart contract, a backend and frontend apps that will
+                  It included a community bootstrapping smart contract and a backend and frontend apps to
                   handle anonymous publications and reactions using ZK-proofs.
                 </p>
               </>
