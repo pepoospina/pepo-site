@@ -435,7 +435,7 @@ function App() {
 
           <Project
             name="Underscore Protocol"
-            role="Founder, Architect and Development lead"
+            role="Founder, Architecture and Development lead"
             codeUrl="https://github.com/uprtcl"
             logo="/uprtcl-logo.png"
             demo={
@@ -695,7 +695,7 @@ function App() {
           <Project
             shade
             name="CollectiveOne"
-            role="Founder, Architect and Development lead"
+            role="Founder, Architecture and Development lead"
             codeUrl="https://github.com/Common-Value"
             logo="/C1.png"
             demo={
