@@ -258,6 +258,10 @@ function App() {
                     </p>
 
                     <p>
+                      With time, membership gets "solidified" and cannot be challenged anymore, disolving the original hierarchy.
+                    </p>
+
+                    <p>
                       You can check the code{" "}
                       <a
                         href="https://github.com/pepoospina/microdemocracies/tree/main/contracts"
