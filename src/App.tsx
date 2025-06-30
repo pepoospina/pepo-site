@@ -105,6 +105,7 @@ function App() {
                   <Text style={parStyle}>
                     Right now I'm having fun building{" "}
                     <a
+                      style={{ margin: "0px 4px" }}
                       href="https://slowfeed.ai/"
                       target="_blank"
                       rel="noreferrer"
@@ -219,7 +220,6 @@ function App() {
                   posts with keywords and other RDF links so that the posts
                   created a global knowledge graph published to the
                   <a
-                    style={{ margin: "0px 4px" }}
                     href="https://nanopub.net/"
                     target="_blank"
                     rel="noreferrer"
