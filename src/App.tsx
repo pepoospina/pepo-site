@@ -2,6 +2,7 @@ import "./App.css";
 import { Box, Button, Grommet, Heading, Image, Text } from "grommet";
 import { Project } from "./components/Project";
 import { CaretDownFill } from "grommet-icons";
+import { CSSProperties } from "react";
 
 interface IconLinkProps {
   _href: string;
@@ -51,6 +52,12 @@ function App() {
     });
   };
 
+  const parStyle: CSSProperties = {
+    fontSize: "18px",
+    lineHeight: "22px",
+    fontWeight: "300",
+  };
+
   return (
     <div className="App">
       <Grommet style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -79,8 +86,34 @@ function App() {
             </Box>
             <Box>
               <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
-              <Box style={{ margin: "0px 0px" }}>
-                Entrepreneur - Software Developer - Builder
+              <Box style={{ margin: "0px 0px" }} gap="32px" align="center">
+                <Text size="24px">
+                  Software Developer - Builder - Entrepreneur
+                </Text>
+                <Box style={{ maxWidth: "600px" }} gap="16px">
+                  <Text style={parStyle}>
+                    Hi! I'm Pepo, I'm an experienced software developer based in
+                    Spain. I've been bulding new projects, from idea to MVP and
+                    early adoption, for over 8 years.
+                  </Text>
+                  <Text style={parStyle}>
+                    I'm good at rapidly prototyping fullstack applications on
+                    top of blockchain and web3 technologies, and I'm also
+                    familiar with the typical (hard) challenges that emerge
+                    around early stage startups.
+                  </Text>
+                  <Text style={parStyle}>
+                    Right now I'm having fun building{" "}
+                    <a
+                      href="https://slowfeed.ai/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Slowfeed.ai
+                    </a>
+                    on top of Bluesky, but I'm open to new opportunities!
+                  </Text>
+                </Box>
               </Box>
               <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
               <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
@@ -162,11 +195,17 @@ function App() {
             name="Cosmik Network"
             codeUrl="https://github.com/Common-SenseMakers/sensemakers"
             demo={
-              <a href="https://app.cosmik.network/" target="_blank" rel="noreferrer">Prototype</a>
+              <a
+                href="https://app.cosmik.network/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Prototype
+              </a>
             }
             subtitle={`Cross-platform social media aggregator for scientists`}
             role="Architecture and Development lead"
-            links={['https://bsky.app/profile/cosmik.network']}
+            links={["https://bsky.app/profile/cosmik.network"]}
             summary={
               <>
                 <p>
@@ -175,29 +214,48 @@ function App() {
                   used by scientists as a formal part of their scientific work.
                 </p>
 
-               
                 <p>
-                  The process included the use of AI to annotate the original posts with keywords 
-                  and other RDF links so that the posts created a global knowledge graph published
-                  to the <a href="https://nanopub.net/" target="_blank" rel="noreferrer">nanopublications network</a>.
+                  The process included the use of AI to annotate the original
+                  posts with keywords and other RDF links so that the posts
+                  created a global knowledge graph published to the{" "}
+                  <a
+                    href="https://nanopub.net/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    nanopublications network
+                  </a>
+                  .
                 </p>
 
                 <p>
-                  In the second iteration, we focused on AI annotation and built an app that 
-                  allowed users to create cross-platform lists, process their posts with AI annotations,
-                  and then navigate these feeds with enhanced annotations and hyperlinks to jump between
-                  feeds.
+                  In the second iteration, we focused on AI annotation and built
+                  an app that allowed users to create cross-platform lists,
+                  process their posts with AI annotations, and then navigate
+                  these feeds with enhanced annotations and hyperlinks to jump
+                  between feeds.
                 </p>
               </>
             }
-            technologies={["Bluesky", "RDF", "AI", "LLMs", "React", "NodeJS", "Firebase"]}
+            technologies={[
+              "Bluesky",
+              "RDF",
+              "AI",
+              "LLMs",
+              "React",
+              "NodeJS",
+              "Firebase",
+            ]}
             subprojects={[
               {
                 name: "Cross-platform Social Media Annotation tool",
                 type: "Web application",
                 summary: (
                   <>
-                    <p>The application was built by a team of 4, with me as technical lead, one designer, and two other developers.</p>
+                    <p>
+                      The application was built by a team of 4, with me as
+                      technical lead, one designer, and two other developers.
+                    </p>
 
                     <p>
                       It was built on top of Google Firebase infrastructure.
@@ -205,7 +263,7 @@ function App() {
                   </>
                 ),
                 links: [],
-              }
+              },
             ]}
           ></Project>
           <Project
@@ -213,52 +271,66 @@ function App() {
             name="Microdemocracies"
             codeUrl="https://github.com/pepoospina/microdemocracies"
             demo={
-             <Box><Image fit="contain" src="/mr-MVP 01.png"></Image><Image fit="contain" src="/mr-MVP 02.png"></Image></Box>
+              <Box>
+                <Image fit="contain" src="/mr-MVP 01.png"></Image>
+                <Image fit="contain" src="/mr-MVP 02.png"></Image>
+              </Box>
             }
             subtitle={`Tool for launching onchain communities with ZK anonymous voting`}
             role="Founder, Architecture and Development lead"
-            links={['https://warpcast.com/microdemocracies/0xe9af72f5']}
+            links={["https://warpcast.com/microdemocracies/0xe9af72f5"]}
             summary={
               <>
                 <p>
-                  A microdemocracy is a safe space with decentralized onchain membership control
-                  based on a web of trust.
-                  
-                  Members can post questions or create polls, while 
-                  other members can answer them. 
-                  
-                  The answers remain completely anonymous, and their anonymity is guaranteed by
-                  ZK-proofs.
+                  A microdemocracy is a safe space with decentralized onchain
+                  membership control based on a web of trust. Members can post
+                  questions or create polls, while other members can answer
+                  them. The answers remain completely anonymous, and their
+                  anonymity is guaranteed by ZK-proofs.
                 </p>
 
                 <p>
-                  This is a small side-project I built and maintained for a few months while exploring
-                  DAO applications that addressed the real needs of communities more effectively.
+                  This is a small side-project I built and maintained for a few
+                  months while exploring DAO applications that addressed the
+                  real needs of communities more effectively.
                 </p>
 
                 <p>
-                  It included a community bootstrapping smart contract along with backend and frontend apps to
-                  handle anonymous publications and reactions using ZK-proofs.
+                  It included a community bootstrapping smart contract along
+                  with backend and frontend apps to handle anonymous
+                  publications and reactions using ZK-proofs.
                 </p>
               </>
             }
-            technologies={["ZK-proofs", "Typescript", "Ethereum", "React", "NodeJS"]}
+            technologies={[
+              "ZK-proofs",
+              "Typescript",
+              "Ethereum",
+              "React",
+              "NodeJS",
+            ]}
             subprojects={[
               {
                 name: "Community/DAO Bootstrapping Contracts",
                 type: "Ethereum Smart Contracts",
                 summary: (
                   <>
-                    <p>Smart contracts that allow the creation of a community/DAO with decentralized membership control.</p>
-
                     <p>
-                      A set of founders can each invite other people. These new members can further invite others. If someone 
-                      adds a member without respecting the membership rules for that community/DAO, other members can expel the 
-                      new member, automatically expelling all the members they invited.
+                      Smart contracts that allow the creation of a community/DAO
+                      with decentralized membership control.
                     </p>
 
                     <p>
-                      With time, membership gets "solidified" and cannot be challenged anymore, disolving the original hierarchy.
+                      A set of founders can each invite other people. These new
+                      members can further invite others. If someone adds a
+                      member without respecting the membership rules for that
+                      community/DAO, other members can expel the new member,
+                      automatically expelling all the members they invited.
+                    </p>
+
+                    <p>
+                      With time, membership gets "solidified" and cannot be
+                      challenged anymore, disolving the original hierarchy.
                     </p>
 
                     <p>
@@ -283,16 +355,22 @@ function App() {
                 summary: (
                   <>
                     <p>
-                      I experimented with {" "}
-                      <a href="https://www.erc4337.io/docs" target="_blank" rel="noreferrer">AccountAbstraction and EIP-4337</a>, 
-                      so that actions taken from the app were executed using 
-                      user operations that did not require having funds to pay 
+                      I experimented with{" "}
+                      <a
+                        href="https://www.erc4337.io/docs"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        AccountAbstraction and EIP-4337
+                      </a>
+                      , so that actions taken from the app were executed using
+                      user operations that did not require having funds to pay
                       for the transaction.
                     </p>
 
                     <p>
-                      I also integrated a Wallet-as-a-Service solution to handle an Ethereum 
-                      wallet for users who did not have one.
+                      I also integrated a Wallet-as-a-Service solution to handle
+                      an Ethereum wallet for users who did not have one.
                     </p>
                   </>
                 ),
@@ -435,7 +513,6 @@ function App() {
               },
             ]}
           ></Project>
-          
 
           <Project
             name="Underscore Protocol"
@@ -734,9 +811,9 @@ function App() {
                 </p>
                 <p>
                   The app also supported peer-reviewed value distribution, where
-                  each team would split a bag of tokens among themselves by averaging
-                  the subjective value attribution provided by each member of
-                  the team.
+                  each team would split a bag of tokens among themselves by
+                  averaging the subjective value attribution provided by each
+                  member of the team.
                 </p>
               </>
             }
@@ -774,11 +851,11 @@ function App() {
                 summary: (
                   <>
                     <p>
-                      An API that served the frontend application. It was
-                      built in Java, the first technology I learned for Web
+                      An API that served the frontend application. It was built
+                      in Java, the first technology I learned for Web
                       development. It included a plethora of features, including
-                      email notifications, websockets, data indexing,
-                      querying, and more.
+                      email notifications, websockets, data indexing, querying,
+                      and more.
                     </p>
                     <p>
                       You can check the code{" "}

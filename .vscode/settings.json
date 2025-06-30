@@ -46,18 +46,16 @@
     "**/.yalc": true,
     "**/.yarn": true
   },
-  "explorerExclude.backup": null,
   "eslint.workingDirectories": [
     { "directory": "packages/contracts", "changeProcessCWD": true },
     { "directory": "packages/core", "changeProcessCWD": true },
     { "directory": "packages/frontend", "changeProcessCWD": true },
     { "directory": "packages/oracle-node", "changeProcessCWD": true }
   ],
-  "solidity.packageDefaultDependenciesDirectory": "packages/contracts/node_modules",
   "editor.formatOnSave": true,
-  "solidity.formatter": "prettier", // This is the default so it might be missing.
-  "[solidity]": {
-    "editor.defaultFormatter": "JuanBlanco.solidity"
-  },
-  "solidity.defaultCompiler": "localNodeModule"
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
