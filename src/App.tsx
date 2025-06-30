@@ -217,8 +217,9 @@ function App() {
                 <p>
                   The process included the use of AI to annotate the original
                   posts with keywords and other RDF links so that the posts
-                  created a global knowledge graph published to the{" "}
+                  created a global knowledge graph published to the
                   <a
+                    style={{ margin: "0px 4px" }}
                     href="https://nanopub.net/"
                     target="_blank"
                     rel="noreferrer"
