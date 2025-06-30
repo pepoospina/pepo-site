@@ -191,50 +191,75 @@ function App() {
           align="center"
         >
           <Project
+            logo="/yoga.png"
+            name="Slowfeed.ai"
+            codeUrl="https://github.com/Common-SenseMakers/sensemakers"
+            demo="https://slowfeed.ai/"
+            subtitle={`Cross-platform list creator and AI bot autoposter`}
+            role="Architecture and Development"
+            links={["https://slowfeed.ai/"]}
+            summary={
+              <>
+                <p>
+                  Slowfeed.ai lets users easily create and consume ranked lists
+                  of posts from multiple social networks (X, Bluesky and
+                  Mastodon). These lists are much more interesting to consume
+                  than the chronological or viral feeds from these platforms.
+                </p>
+                <p>
+                  List creators can also connect an existing Bluesky or X
+                  Account to a list and Slowfeed will autopost summaries from
+                  that list into that account.
+                </p>
+              </>
+            }
+            technologies={[
+              "Bluesky",
+              "X-API",
+              "Mastodon",
+              "AI",
+              "React",
+              "NodeJS",
+              "Firebase",
+            ]}
+            subprojects={[
+              {
+                name: "Cross-platform Social Media Annotation tool",
+                type: "Web application",
+                summary: (
+                  <>
+                    <p>
+                      The application was built by a team of 4, with me as
+                      technical lead, one designer, and two other developers.
+                    </p>
+
+                    <p>
+                      It was built on top of Google Firebase infrastructure.
+                    </p>
+                  </>
+                ),
+                links: [],
+              },
+            ]}
+          ></Project>
+          <Project
             shade
             logo="/cosmik-logo.jpg"
             name="Cosmik Network"
             codeUrl="https://github.com/Common-SenseMakers/sensemakers"
-            demo={
-              <a
-                href="https://app.cosmik.network/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Prototype
-              </a>
-            }
+            demo="https://app.cosmik.network/"
             subtitle={`Cross-platform social media aggregator for scientists`}
             role="Architecture and Development lead"
             links={["https://bsky.app/profile/cosmik.network"]}
             summary={
               <>
                 <p>
-                  I joined this project as CTO and co-founder and helped develop
-                  different prototypes to explore how social networks can be
-                  used by scientists as a formal part of their scientific work.
-                </p>
-
-                <p>
-                  The process included the use of AI to annotate the original
-                  posts with keywords and other RDF links so that the posts
-                  created a global knowledge graph published to the
-                  <a
-                    href="https://nanopub.net/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    nanopublications network
-                  </a>
-                  .
-                </p>
-
-                <p>
-                  In the second iteration, we focused on AI annotation and built
-                  an app that allowed users to create cross-platform lists,
-                  process their posts with AI annotations, and then navigate
-                  these feeds with enhanced annotations and hyperlinks to jump
-                  between feeds.
+                  As CTO and co-founder, I developed prototypes to integrate
+                  social networks into scientific workflows. Using AI, we
+                  annotated posts with keywords and RDF links, creating a global
+                  knowledge graph published on the nanopublications network.
+                  Later, we built an app for cross-platform list creation,
+                  AI-annotated feeds, and enhanced navigation with hyperlinks.
                 </p>
               </>
             }
@@ -395,37 +420,19 @@ function App() {
             summary={
               <>
                 <p>
-                  CommonValue is a customizable platform, built on Ethereum,
-                  that automatically converts Web2 activity in Web3 rewards. It
-                  was initially focused on GitHub, and it allowed projects to
-                  distribute any ERC-20 token based on merged pull-requests to
-                  one or more repositories.
+                  CommonValue is a customizable Ethereum-based platform that
+                  converts Web2 activity into Web3 rewards, initially focusing
+                  on GitHub to distribute ERC-20 tokens for merged pull
+                  requests. Built from scratch by a four-person DAOstack team
+                  (two developers, one UX, one marketing)
                 </p>
 
                 <p>
-                  The project was built from scratch by a team of 4 inside{" "}
-                  <a
-                    href="https://daostack.io/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    DAOstack
-                  </a>
-                  . The team consisted of two developers, one UX and one
-                  Marketing person. I personally architected the solution and
-                  lead the development from idea until production.
-                </p>
-
-                <p>
-                  The architecture was purposely built to facilitate the
-                  integration with different Web2 platforms and to facilitate
-                  the implementation, by third parties, of any set of rules that
-                  would convert Web2 activity on Web3 rewards.
-                </p>
-
-                <p>
-                  The project was unfortunately halted by DAOstack on May 2023
-                  for internal reasons.
+                  I architected and led its development from concept to
+                  production. The architecture supports integration with various
+                  Web2 platforms and enables third-party rule implementation for
+                  Web2-to-Web3 reward conversion. The project was halted by
+                  DAOstack in May 2023 for internal reasons.
                 </p>
               </>
             }

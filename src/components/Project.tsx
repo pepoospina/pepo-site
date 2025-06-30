@@ -4,9 +4,7 @@ import {
   Box,
   BoxExtendedProps,
   Button,
-  Grid,
   Heading,
-  Tag,
   Text,
   Image,
   Layer,
@@ -33,7 +31,7 @@ export interface ProjectProps extends BoxExtendedProps {
   name: string;
   role: string;
   codeUrl: string;
-  demo: ReactNode;
+  demo: ReactNode | string;
   links: string[];
   subtitle: string;
   summary: ReactNode;
@@ -63,7 +61,16 @@ export function Project(props: ProjectProps) {
     } else {
       showAll();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isShowAll]);
+
+  const showDemo = () => {
+    if (props.demo && props.demo.toString().startsWith("http")) {
+      window.open(props.demo.toString(), "_blank");
+    } else {
+      setShowDemo(!isShowDemo);
+    }
+  };
 
   return (
     <Box
@@ -73,7 +80,7 @@ export function Project(props: ProjectProps) {
         margin: "0px 0px",
         padding: "60px 0vw",
         borderRadius: "0px",
-        borderTop: "solid 4px #dfdfcbff",
+
         backgroundColor: props.shade ? "#F4F4ED" : "#ececdf",
         width: "100%",
       }}
@@ -176,7 +183,7 @@ export function Project(props: ProjectProps) {
               color="brand"
               style={{ width: "100px", fontWeight: "bold" }}
               onClick={() => {
-                setShowDemo(!isShowDemo);
+                showDemo();
               }}
             >
               <Text color="brand" size="medium">
@@ -216,22 +223,30 @@ export function Project(props: ProjectProps) {
                 <Text size="medium">{props.summary}</Text>
               </Box>
 
-              <Text
-                style={{ alignSelf: "start", marginTop: "16px" }}
-                size="medium"
-              >
-                <b>Technologies used:</b>
-              </Text>
-
-              <Grid
+              <Box
                 style={{ padding: "20px 0px" }}
-                columns="medium"
-                gap="medium"
+                gap="12px"
+                direction="row"
+                wrap
+                justify="center"
               >
                 {technologies.map((tech) => {
-                  return <Tag size="medium" value={tech}></Tag>;
+                  return (
+                    <Box
+                      style={{
+                        width: "fit-content",
+                        backgroundColor: "rgb(51, 32, 87)",
+                        color: "#ffffff",
+                      }}
+                      pad={{ horizontal: "16px", vertical: "2px" }}
+                      margin={{ bottom: "12px" }}
+                      round="small"
+                    >
+                      <Text>{tech}</Text>
+                    </Box>
+                  );
                 })}
-              </Grid>
+              </Box>
             </Box>
           ) : (
             <></>
@@ -248,7 +263,11 @@ export function Project(props: ProjectProps) {
                 return (
                   <AccordionPanel
                     label={
-                      <Box direction="column" align="start" style={{ padding: "3vw 0" }}>
+                      <Box
+                        direction="column"
+                        align="start"
+                        style={{ padding: "3vw 0" }}
+                      >
                         <Heading
                           style={{
                             margin: "0",
@@ -259,7 +278,9 @@ export function Project(props: ProjectProps) {
                         >
                           {subproject.name}
                         </Heading>
-                        <Text size="medium">{subproject.type}</Text>
+                        <Text size="medium" style={{ textAlign: "left" }}>
+                          {subproject.type}
+                        </Text>
                       </Box>
                     }
                   >
