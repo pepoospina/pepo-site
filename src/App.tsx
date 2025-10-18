@@ -2,7 +2,7 @@ import "./App.css";
 import { Box, Button, Grommet, Heading, Image, Text } from "grommet";
 import { Project } from "./components/Project";
 import { CaretDownFill } from "grommet-icons";
-import { CSSProperties } from "react";
+import { CSSProperties, useState, useEffect } from "react";
 
 interface IconLinkProps {
   _href: string;
@@ -44,6 +44,17 @@ function IconImg(props: IconLinkProps) {
 }
 
 function App() {
+  const [mobile, setMobile] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const clickDown = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -80,7 +91,7 @@ function App() {
               <Image fit="contain" src="/pepo-avatar.png"></Image>
             </Box>
             <Box style={{ fontSize: "100px" }} justify="center">
-              <Text size="100px" color="#495059ff">
+              <Text size={mobile ? "60px" : "100px"} color="#495059ff">
                 Pepo
               </Text>
             </Box>
@@ -90,7 +101,7 @@ function App() {
                 <Text size="24px">
                   Software Developer - Builder - Entrepreneur
                 </Text>
-                <Box style={{ maxWidth: "600px" }} gap="16px">
+                <Box style={{ maxWidth: "600px", overflow: "auto" }} gap="16px">
                   <Text style={parStyle}>
                     Hi! I'm Pepo, I'm an experienced software developer based in
                     Spain. I've been bulding new projects, from idea to MVP and
