@@ -83,25 +83,37 @@ function App() {
             <Box
               style={{
                 width: "20vw",
-                maxWidth: "300px",
-                maxHeight: "300px",
+                maxWidth: "200px",
+                maxHeight: "200px",
                 minWidth: "120px",
               }}
             >
               <Image fit="contain" src="/pepo-avatar.png"></Image>
             </Box>
             <Box style={{ fontSize: "100px" }} justify="center">
-              <Text size={mobile ? "60px" : "100px"} color="#495059ff">
+              <Text size={mobile ? "60px" : "80px"} color="#495059ff">
                 Pepo
               </Text>
             </Box>
-            <Box>
+            <Box style={{ flexGrow: "1" }}>
               <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
-              <Box style={{ margin: "0px 0px" }} gap="32px" align="center">
+              <Box
+                style={{ margin: "0px 0px", flexGrow: "1" }}
+                gap="32px"
+                align="center"
+              >
                 <Text size="24px">
                   Software Developer - Builder - Entrepreneur
                 </Text>
-                <Box style={{ maxWidth: "600px", overflow: "auto" }} gap="16px">
+                <Box
+                  style={{
+                    maxWidth: "600px",
+                    overflow: "auto",
+                    flexGrow: "1",
+                  }}
+                  justify="center"
+                  gap="16px"
+                >
                   <Text style={parStyle}>
                     Hi! I'm Pepo, I'm an experienced software developer based in
                     Spain. I've been bulding new projects, from idea to MVP and
