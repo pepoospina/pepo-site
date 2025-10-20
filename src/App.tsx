@@ -129,13 +129,13 @@ function App() {
                     Right now I'm having fun building{" "}
                     <a
                       style={{ margin: "0px 4px" }}
-                      href="https://slowfeed.ai/"
+                      href="https://payif.io/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Slowfeed.ai
+                      Payif.io
                     </a>
-                    on top of Bluesky, but I'm open to new opportunities!
+                    , but I'm open to new opportunities!
                   </Text>
                 </Box>
               </Box>
@@ -213,6 +213,112 @@ function App() {
           direction="column"
           align="center"
         >
+          <Project
+            shade
+            logo="/payif/logo.png"
+            name="Payif.io"
+            codeUrl="https://github.com/pepoospina/payif-app"
+            demo="https://payif.io/"
+            subtitle={`Protected payments for free`}
+            role="Architecture and Development"
+            links={["https://slowfeed.ai/"]}
+            summary={
+              <>
+                <p>
+                  PayIf.io let buyers and sellers safely exchange goods and
+                  services online.
+                </p>
+                <p>
+                  It let buyers lock the funds before buying, sellers then
+                  safely deliver the goods/services with a guaranteed payment of
+                  with the funds, which are automatically released if the
+                  goods/services are delivered successfully.
+                </p>
+                <p>
+                  PayIf, powered by UMA, uses economic incentives to ensure the
+                  great majority of exchanges are successful, while the small
+                  minority that get disputed by the payer are correctly
+                  resolved.
+                </p>
+              </>
+            }
+            technologies={[
+              "EVM",
+              "Smart Contracts",
+              "Stablecoins",
+              "UMA",
+              "React",
+              "NodeJS",
+              "Firebase",
+              "AAVE",
+            ]}
+            subprojects={[
+              {
+                name: "Escrow contract",
+                type: "EVM Smart Contract",
+                summary: (
+                  <>
+                    <p>
+                      A{" "}
+                      <a
+                        href="https://github.com/pepoospina/payif-contracts/tree/main"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Smart Contract
+                      </a>{" "}
+                      that receives the funds from the buyer and releases them
+                      to the seller if the goods/services are delivered
+                      successfully.
+                    </p>
+
+                    <p>
+                      It integrates Aave as a revenue source, and UMA for
+                      resolving potential disputes among the buyer and the
+                      seller. Revenue is earned through yield on the locked
+                      funds while remaining 100% trustless.
+                    </p>
+                  </>
+                ),
+                links: [],
+              },
+              {
+                name: "PayIf SDK",
+                type: "npm package",
+                summary: (
+                  <>
+                    <p>
+                      A super-simple{" "}
+                      <a
+                        href="https://www.npmjs.com/package/@payif/sdk"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        NPM package
+                      </a>{" "}
+                      that let businesses add a "PayIfDelivered" button to their
+                      websites. Offering their customers the ability to pay for
+                      goods/services with only after delivered.
+                    </p>
+                  </>
+                ),
+                links: [],
+              },
+              {
+                name: "Fullstack Web-app",
+                type: "Web application",
+                summary: (
+                  <>
+                    <p>
+                      A frontend application built with React and NodeJS that
+                      allows users to create and manage their PayIf payments.
+                    </p>
+                  </>
+                ),
+                links: [],
+              },
+            ]}
+          ></Project>
           <Project
             logo="/yoga.png"
             name="Slowfeed.ai"
