@@ -345,7 +345,6 @@ function App() {
             technologies={[
               "Bluesky",
               "X-API",
-              "Mastodon",
               "AI",
               "React",
               "NodeJS",
@@ -353,17 +352,20 @@ function App() {
             ]}
             subprojects={[
               {
-                name: "Cross-platform Social Media Annotation tool",
+                name: "Cross-platform Social Media Aggregator",
                 type: "Web application",
                 summary: (
                   <>
                     <p>
-                      The application was built by a team of 4, with me as
-                      technical lead, one designer, and two other developers.
+                      This is a final iteration I made on Cosmik app to
+                      productize it as a cross-platform social media aggregator.
+                      The effort was focused on simplifying and cleaning the
+                      user experience and making sure the result was a clear
+                      purposed and intuitive application.
                     </p>
-
                     <p>
-                      It was built on top of Google Firebase infrastructure.
+                      X API costs made it expensive, and due to lack of traction
+                      I stopped working on it.
                     </p>
                   </>
                 ),
