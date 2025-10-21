@@ -229,10 +229,10 @@ function App() {
                   services online.
                 </p>
                 <p>
-                  It let buyers lock the funds before buying, sellers then
-                  safely deliver the goods/services with a guaranteed payment of
-                  with the funds, which are automatically released if the
-                  goods/services are delivered successfully.
+                  It works as follows: buyers lock the funds before buying,
+                  sellers can then safely deliver the goods/services with a
+                  guaranteed payment and the funds are automatically released if
+                  the goods/services are delivered successfully.
                 </p>
                 <p>
                   PayIf, powered by UMA, uses economic incentives to ensure the
@@ -274,7 +274,7 @@ function App() {
 
                     <p>
                       It integrates Aave as a revenue source, and UMA for
-                      resolving potential disputes among the buyer and the
+                      resolving potential disputes between the buyer and the
                       seller. Revenue is earned through yield on the locked
                       funds while remaining 100% trustless.
                     </p>
@@ -296,9 +296,9 @@ function App() {
                       >
                         NPM package
                       </a>{" "}
-                      that let businesses add a "PayIfDelivered" button to their
-                      websites. Offering their customers the ability to pay for
-                      goods/services with only after delivered.
+                      that lets businesses add a "PayIfDelivered" button to
+                      their websites, offering their customers the ability to
+                      pay for goods/services only after they are delivered.
                     </p>
                   </>
                 ),
