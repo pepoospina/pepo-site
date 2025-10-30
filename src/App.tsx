@@ -83,15 +83,15 @@ function App() {
             <Box
               style={{
                 width: "20vw",
-                maxWidth: "200px",
-                maxHeight: "200px",
+                maxWidth: "100px",
+                maxHeight: "100px",
                 minWidth: "120px",
               }}
             >
               <Image fit="contain" src="/pepo-avatar.png"></Image>
             </Box>
-            <Box style={{ fontSize: "100px" }} justify="center">
-              <Text size={mobile ? "60px" : "80px"} color="#495059ff">
+            <Box justify="center">
+              <Text size={mobile ? "40px" : "60px"} color="#495059ff">
                 Pepo
               </Text>
             </Box>
@@ -108,35 +108,39 @@ function App() {
                 <Box
                   style={{
                     maxWidth: "600px",
-                    overflow: "auto",
-                    flexGrow: "1",
+                    flexGrow: 1,
                   }}
                   justify="center"
-                  gap="16px"
                 >
-                  <Text style={parStyle}>
-                    Hi! I'm Pepo, I'm an experienced software developer based in
-                    Spain. I've been bulding new projects, from idea to MVP and
-                    early adoption, for over 8 years.
-                  </Text>
-                  <Text style={parStyle}>
-                    I'm good at rapidly prototyping fullstack applications on
-                    top of blockchain and web3 technologies, and I'm also
-                    familiar with the typical (hard) challenges that emerge
-                    around early stage startups.
-                  </Text>
-                  <Text style={parStyle}>
-                    Right now I'm having fun building{" "}
-                    <a
-                      style={{ margin: "0px 4px" }}
-                      href="https://payif.io/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Payif.io
-                    </a>
-                    , but I'm open to new opportunities!
-                  </Text>
+                  <Box
+                    gap="16px"
+                    style={{ overflow: "auto" }}
+                    pad={{ bottom: "medium" }}
+                  >
+                    <Text style={parStyle}>
+                      Hi! I'm Pepo, I'm an experienced software developer based
+                      in Spain. I've been bulding new projects, from idea to MVP
+                      and early adoption, for over 8 years.
+                    </Text>
+                    <Text style={parStyle}>
+                      I'm good at rapidly prototyping fullstack applications on
+                      top of blockchain and web3 technologies, and I'm also
+                      familiar with the typical (hard) challenges that emerge
+                      around early stage startups.
+                    </Text>
+                    <Text style={parStyle}>
+                      Right now I'm having fun building{" "}
+                      <a
+                        style={{ margin: "0px 4px" }}
+                        href="https://payif.io/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Payif.io
+                      </a>
+                      , but I'm open to new opportunities!
+                    </Text>
+                  </Box>
                 </Box>
               </Box>
               <Box style={{ height: "3vw", maxHeight: "100px" }}></Box>
